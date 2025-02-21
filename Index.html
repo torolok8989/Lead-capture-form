@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead Capture Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Get a Free Quote</h2>
+        <p>Fill out the form below and we will contact you shortly.</p>
+        
+        <form id="leadForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email">
+
+            <label for="project-type">Project Type</label>
+            <select id="project-type" name="project-type">
+                <option value="interior">Interior</option>
+                <option value="exterior">Exterior</option>
+                <option value="commercial">Commercial</option>
+                <option value="special">Special</option>
+            </select>
+
+            <label for="details">Project Details</label>
+            <textarea id="details" name="details" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="success-message" class="hidden">Thank you! Your request has been submitted.</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
